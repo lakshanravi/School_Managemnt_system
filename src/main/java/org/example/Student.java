@@ -28,4 +28,29 @@ public class Student {
         feesPaid+=fees;
     }
 
+    //get krnna value getter oni
+
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getGrade() {
+        return grade;
+    }
+
+    //get fees paid by the students
+    public int getFeesPaid() {
+        return feesPaid;
+    }
+
+
+    //get teh total fees of student
+    public int getFeesTotal() {
+        return feesTotal;
+    }
 }
