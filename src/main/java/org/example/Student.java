@@ -24,8 +24,9 @@ public class Student {
     //add the fee to the feespaid
     //masen masett gewn tika add krnw paid ekt
     //feespaid = feespaid + fees
-    public  void  updateFeesPaid(int fees){
+    public  void  payFees(int fees){
         feesPaid+=fees;
+        School.updateTotalMoneyEarned(fees);
     }
 
     //get krnna value getter oni
@@ -52,5 +53,18 @@ public class Student {
     //get teh total fees of student
     public int getFeesTotal() {
         return feesTotal;
+    }
+  public int getRemainingFees(){
+        return  feesTotal-feesPaid;
+  }
+
+
+  //ctrl+0
+    //tostring
+    //student details return krnn hdnnn
+    @Override
+    public String toString() {
+        return "student name"+ name + " Total fees paid so far " + feesPaid +
+                "";
     }
 }
